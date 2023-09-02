@@ -1,6 +1,6 @@
 public class CSVobj
 {
-    public int ip;
+    public long ip;
     public String ip_str;
     public int port;
     public String timestamp;
@@ -8,14 +8,14 @@ public class CSVobj
     {
 
     }
-    public CSVobj(int ip, String ipStr, int port, String timestamp)
+    public CSVobj(long ip, String ipStr, int port, String timestamp)
     {
         this.ip = ip;
         this.ip_str = ipStr;
         this.port = port;
         this.timestamp = timestamp;
     }
-    public int getIP()
+    public long getIP()
     {
         return ip;
     }
@@ -26,6 +26,10 @@ public class CSVobj
     public int getPort()
     {
         return port;
+    }
+    public String getTimestamp()
+    {
+        return timestamp;
     }
 
 
